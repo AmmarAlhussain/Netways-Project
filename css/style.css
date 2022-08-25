@@ -324,6 +324,12 @@ footer span {
 
 @media (max-width: 1550px) and (min-width:1320px) {
 
+    .running-shoes h2,
+    .sneakers-shoes h2,
+    .services h2 {
+        font-size: 38px;
+    }
+
     .running-shoes,
     .sneakers-shoes,
     .services {
@@ -344,6 +350,12 @@ footer span {
 
 @media (max-width: 1319px) and (min-width:1050px) {
 
+    .running-shoes h2,
+    .sneakers-shoes h2,
+    .services h2 {
+        font-size: 35px;
+    }
+
     .running-shoes,
     .sneakers-shoes,
     .services {
@@ -363,6 +375,12 @@ footer span {
 }
 
 @media (max-width: 1049px) and (min-width:751px) {
+
+    .running-shoes h2,
+    .sneakers-shoes h2,
+    .services h2 {
+        font-size: 32px;
+    }
 
     .services {
         height: 450px;
