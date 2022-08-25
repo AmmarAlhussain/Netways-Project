@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 200px 0 20px;
+}
+
+header .logo {
+    width: 16%;
+    height: 100%;
+}
+
+header .logo a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+}
+
+header nav {
+    width: 20%;
+    height: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+header nav ul li {
+    display: block;
+    width: 100px;
+    height: 100%;
+}
+
+header nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    color: black;
+}
+
+header nav ul li a:hover,
+header .logo a:hover {
+    color: #D42945;
+    border-bottom: 3px solid #D42945;
+}
+
+/* Header */
+
+.background {
+    background-image: url("../img/background.png");
+    height: 400px;
+    background-size: cover;
+    position: relative;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    height: 100%;
+}
+
+.background::before {
+    content: "DISCORD A WORLD WITHOUT LIMITS";
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 180px;
+    top: 110px;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 600px;
+}
+
+.running-shoes,
+.services {
+    background-color: #FAFAFA;
+}
+
+.running-shoes,
+.sneakers-shoes,
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 50px 50px 50px;
+    height: 800px;
+    position: relative;
+}
+
+.services {
+    height: 600px;
+}
+
+.running-shoes h2,
+.sneakers-shoes h2,
+.services h2 {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0 auto;
+}
+
+
+.running-shoes h2::before,
+.sneakers-shoes h2::before,
+.services h2::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    top: 80px;
+    width: 100%;
+    height: 2px;
+}
+
+.running-shoes h2::after,
+.sneakers-shoes h2::after,
+.services h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid 2px #333;
+    top: 73px;
+}
+
+.running-shoes .box,
+.sneakers-shoes .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 430px;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.running-shoes .card,
+.sneakers-shoes .card {
+    width: 275px;
+    height: 387px;
+    background-color: #ECECEC;
+    border-radius: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.running-shoes .card:hover,
+.sneakers-shoes .card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.running-shoes .card:hover .text,
+.sneakers-shoes .card:hover .text {
+    top: 5px;
+}
+
+.running-shoes .card img,
+.sneakers-shoes .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.text {
+    position: relative;
+    left: 3px;
+}
+
+.services p {
+    color: #777;
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+}
+
+.services .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+}
+
+.services .box div {
+    width: 50%;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    height: 50px;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+footer span {
+    font-weight: bold;
+}
