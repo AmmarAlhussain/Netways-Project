@@ -318,5 +318,6 @@ footer span {
 
     footer p {
         letter-spacing: 1px;
+            font-size: 16px;
     }
 }
