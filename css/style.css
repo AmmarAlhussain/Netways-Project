@@ -324,6 +324,17 @@ footer span {
 
 @media (max-width: 1550px) and (min-width:1320px) {
 
+    .running-shoes,
+    .sneakers-shoes,
+    .services {
+        padding: 35px 20px 20px 20px;
+        height: 700px;
+    }
+
+    .services {
+        height: 550px;
+    }
+
     .running-shoes .card,
     .sneakers-shoes .card {
         width: calc(275px/10 * 8);
@@ -333,6 +344,17 @@ footer span {
 
 @media (max-width: 1319px) and (min-width:1050px) {
 
+    .running-shoes,
+    .sneakers-shoes,
+    .services {
+        padding: 35px 20px 20px 20px;
+        height: 600px;
+    }
+
+    .services {
+        height: 500px;
+    }
+
     .running-shoes .card,
     .sneakers-shoes .card {
         width: calc(275px/10 * 6);
@@ -341,6 +363,17 @@ footer span {
 }
 
 @media (max-width: 1049px) and (min-width:751px) {
+
+    .services {
+        height: 450px;
+    }
+
+    .running-shoes,
+    .sneakers-shoes,
+    .services {
+        padding: 35px 20px 20px 20px;
+        height: 550px;
+    }
 
     .running-shoes .card,
     .sneakers-shoes .card {
