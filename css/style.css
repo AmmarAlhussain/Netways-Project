@@ -32,7 +32,7 @@ header .logo a {
 
 header nav {
     width: 20%;
-    min-width: 250px;
+    min-width: 220px;
     height: 100%;
 }
 
@@ -317,7 +317,34 @@ footer span {
     }
 
     footer p {
+        font-size: 16px;
         letter-spacing: 1px;
-            font-size: 16px;
+    }
+}
+
+@media (max-width: 1550px) and (min-width:1320px) {
+
+    .running-shoes .card,
+    .sneakers-shoes .card {
+        width: calc(275px/10 * 8);
+        height: calc(387px/10 * 8);
+    }
+}
+
+@media (max-width: 1319px) and (min-width:1050px) {
+
+    .running-shoes .card,
+    .sneakers-shoes .card {
+        width: calc(275px/10 * 6);
+        height: calc(387px/10 * 6);
+    }
+}
+
+@media (max-width: 1049px) and (min-width:751px) {
+
+    .running-shoes .card,
+    .sneakers-shoes .card {
+        width: calc(275px/10 * 4);
+        height: calc(387px/10 * 4);
     }
 }
