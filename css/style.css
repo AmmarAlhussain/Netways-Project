@@ -10,11 +10,11 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    padding: 0 200px 0 20px;
+    padding: 0 11% 0 20px;
 }
 
 header .logo {
-    width: 16%;
+    width: fit-content;
     height: 100%;
 }
 
@@ -32,6 +32,7 @@ header .logo a {
 
 header nav {
     width: 20%;
+    min-width: 250px;
     height: 100%;
 }
 
@@ -65,6 +66,20 @@ header .logo a:hover {
     border-bottom: 3px solid #D42945;
 }
 
+@media (max-width: 750px) {
+    header {
+        padding: 0 20px 0 20px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+    }
+}
+
 /* Header */
 
 .background {
@@ -93,6 +108,20 @@ header .logo a:hover {
     font-weight: 600;
     letter-spacing: 2px;
     width: 600px;
+}
+
+@media (max-width: 750px) {
+    .background {
+        height: 250px;
+    }
+
+    .background::before {
+        left: 25px;
+        top: 90px;
+        letter-spacing: 5px;
+        width: 365px;
+        text-align: center;
+    }
 }
 
 .running-shoes,
@@ -125,7 +154,6 @@ header .logo a:hover {
     font-weight: normal;
     margin: 0 auto;
 }
-
 
 .running-shoes h2::before,
 .sneakers-shoes h2::before,
@@ -232,4 +260,63 @@ footer p {
 
 footer span {
     font-weight: bold;
+}
+
+@media (max-width: 750px) {
+
+    .running-shoes,
+    .sneakers-shoes,
+    .services {
+        padding: 35px 20px 20px 20px;
+        height: 700px;
+    }
+
+    .services {
+        height: 400px;
+    }
+
+    .running-shoes h2,
+    .sneakers-shoes h2,
+    .services h2 {
+        font-size: 30px;
+    }
+
+    .running-shoes h2::before,
+    .sneakers-shoes h2::before,
+    .services h2::before {
+        top: 60px;
+    }
+
+    .running-shoes h2::after,
+    .sneakers-shoes h2::after,
+    .services h2::after {
+        top: 53px;
+    }
+
+    .running-shoes .box,
+    .sneakers-shoes .box {
+        flex-wrap: wrap;
+        height: 520px;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    .running-shoes .card,
+    .sneakers-shoes .card {
+        width: calc(275px/2);
+        height: calc(387px/2);
+    }
+
+    .services p {
+        top: 35px;
+    }
+
+    .services .box {
+        width: 85%;
+        height: 170px;
+    }
+
+    footer p {
+        letter-spacing: 1px;
+    }
 }
